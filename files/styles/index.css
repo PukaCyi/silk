@@ -165,6 +165,10 @@ a, a:hover, a:visited, a:active {
     margin-left: 1em;
 }
 
+.object {
+    margin-bottom: 50px;
+}
+
 footer {
     margin-top: 1em;
     color: var(--txtColor);
