@@ -1,8 +1,7 @@
-# Internal
 Silk, the project that powers banami.nekoweb.org, a personal website by [Banami](https://banami.nekoweb.org/about)
 
 # About
-Silk is the successor to Banami (codename). It is designed to be as simplistic as possible and aligns with websites from the early 2000s, which look fantastic in contrast to modern sites that often overdo their UI/looks.
+Silk is the successor to [Banami (codename)](https://github.com/PukaCyi/Banami). It is designed to be as simplistic as possible. It aligns with some Nekoweb websites and Pyohato's Nebulamancers site (before being closed as he left the internet), which look fantastic in contrast to modern sites that often overdo their UI/looks.
 
 # Special Mentions
 * Pyohato (inspiration, assets) - long gone sadly (hope life is going great)
