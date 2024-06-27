@@ -183,7 +183,7 @@ footer {
 /* <noscript> */
 .error {
     background: var(--nscr);
-    color: var(--defaultColor);
+    color: black;
     display: flex;
     align-items: center;
     justify-content: center;
