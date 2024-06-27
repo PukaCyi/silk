@@ -1,22 +1,39 @@
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Lexend:wght@100..900&display=swap');
+* {
+    font-family: ＭＳ Ｐゴシック, Times, Arial;
+}
 
 html {
     background-image: url("https://banami.nekoweb.org/migrate/eris-bg.png");
     background-repeat: no-repeat;
     background-size: cover;
+    background-color: #f9bcd0;
     height: 100%;
-    overflow: hidden;
+    overflow: auto;
+    box-sizing: border-box;
+    word-spacing: 0.15px;
 }
 
 body {
     display: flex;
-    font-family: 'Lexend', sans-serif;
     margin: 0;
+}
+
+@media screen and (max-width: 800px), (max-height: 950px)  {
+    * {
+        scale: 95% !important
+    }
+}
+
+@media screen and (max-width: 540px), (max-height: 545px)  {
+    * {
+        scale: 90% !important
+    }
 }
 
 marquee {
     align-items: flex-start;
     display: flex;
+    color: black;
     justify-content: center
 }
 
@@ -47,8 +64,9 @@ marquee {
 
 #tools {
     background: linear-gradient(180deg, rgb(253 239 243), rgb(248 32 95));
-    border-radius: 3.5px;
+    border-radius: 2px;
     display: flex;
+    outline: 5px solid rgb(244 134 169);
     justify-content: space-evenly;
     margin: 1px auto;
     padding: 2px;
@@ -63,7 +81,6 @@ marquee {
     border: none;
     border-left: 2px solid white;
     color: white;
-    font-family: 'Comfortaa', sans-serif;
     font-size: 0.85em;
     font-weight: bold;
     height: 2em;
@@ -75,6 +92,10 @@ marquee {
 
 button.homebutton {
     border-left: none !important;
+}
+
+button a {
+    font-size: 16px;
 }
 
 button:hover::before {
@@ -113,15 +134,15 @@ a, a:hover, a:visited, a:active {
 }
 
 .introd, .sidebar {
-    background: #ff718b;
-    outline: 5px solid rgb(255, 0, 43);
+    background: rgb(255 235 243);
+    outline: 5px solid rgb(244 134 169);
     border-radius: 3.5px;
-    color: white;
+    color: #683946;
 }
 
 
 .introd {
-    width: 31.55em;
+    width: 32.15em;
     font-size: 15px;
     padding: 15px;
 }
@@ -130,6 +151,21 @@ a, a:hover, a:visited, a:active {
     width: 13em;
     padding: 10px;
     margin-left: 1em;
+}
+
+footer {
+    margin-top: 1em;
+    color: #683946;
+    background: rgb(255 235 243);
+    outline: 5px solid rgb(244 134 169);
+    width: 46.1em;
+    border-radius: 3.5px;
+    text-align: right;
+    padding: 10px;
+}
+
+.footer-hr {
+    border: 1.5px dashed #683946;
 }
 
 /* <noscript> */
