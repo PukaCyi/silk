@@ -1,5 +1,5 @@
 * {
-    font-family: ＭＳ Ｐゴシック;
+    font-family: ＭＳ Ｐゴシック, Times, Arial;
 }
 
 html {
@@ -96,6 +96,7 @@ button.homebutton {
 
 button a {
     font-size: 16px;
+    margin-left: 8px;
 }
 
 button:hover::before {
@@ -106,8 +107,13 @@ button:hover::before {
     height: auto;
     left: 0%;
     position: absolute;
-    scale: 100%;
-    transform: translateY(20%);
+    top: 30%;
+}
+
+button.homebutton:hover::before {
+    left: 13%;
+    position: absolute;
+    top: 30%;
 }
 
 a, a:hover, a:visited, a:active {
