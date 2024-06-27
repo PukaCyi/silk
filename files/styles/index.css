@@ -10,6 +10,7 @@
     --tools-gradient-end: rgb(248, 32, 95);
     --toolsTxtColor: white;
     --txtColor: #683946;
+    --curse: url("https://banami.nekoweb.org/curse-1.png");
 }
 
 * {
@@ -25,11 +26,21 @@ html {
     overflow: auto;
     box-sizing: border-box;
     word-spacing: 0.15px;
+    cursor: var(--curse), auto;
 }
 
 body {
     display: flex;
     margin: 0;
+}
+
+img, iframe {
+    user-drag: none;
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
 }
 
 @media screen and (max-width: 800px), (max-height: 950px) {
