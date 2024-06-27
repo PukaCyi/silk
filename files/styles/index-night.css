@@ -1,6 +1,7 @@
 :root {
     --banner-outline-color: #25002c;
     --bgImg: url("https://banami.nekoweb.org/migrate/halloween2019_wallpaper.png");
+    --bgColor: #25002c;
     --button-hover-shadow-color: rgb(0, 0, 0, 0.5);
     --defaultColor: white;
     --nscr: rgb(255, 239, 247);
@@ -9,4 +10,5 @@
     --tools-gradient-end: rgb(248, 32, 95);
     --toolsTxtColor: white;
     --txtColor: white;
+    --curse: url("https://banami.nekoweb.org/curse-2.png");
 }
