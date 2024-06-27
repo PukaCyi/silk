@@ -20,7 +20,7 @@ html {
     background-image: var(--bgImg);
     background-repeat: no-repeat;
     background-size: cover;
-    bgColor: var(--bgColor);
+    background-color: var(--bgColor);
     height: 100%;
     overflow: auto;
     box-sizing: border-box;
@@ -106,10 +106,12 @@ marquee {
 
 button.homebutton {
     border-left: none !important;
+    width: 18.5% !important;
 }
 
 button a {
     font-size: 16px;
+    margin-left: 6px;
 }
 
 button:hover::before {
@@ -117,11 +119,14 @@ button:hover::before {
     content: url('https://banami.nekoweb.org/files/images/hand.png');
     display: inline-block;
     filter: drop-shadow(0 0 15px var(--button-hover-shadow-color));
-    height: auto;
     left: 0%;
+    top: 35%;
     position: absolute;
     scale: 100%;
-    transform: translateY(20%);
+}
+
+button.homebutton:hover::before {
+    left: 6%;
 }
 
 a, a:hover, a:visited, a:active {
@@ -166,7 +171,7 @@ a, a:hover, a:visited, a:active {
 }
 
 .object {
-    margin-bottom: 50px;
+    margin-bottom: 35px;
 }
 
 footer {
