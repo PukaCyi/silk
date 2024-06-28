@@ -29,6 +29,10 @@ html {
     cursor: var(--curse), auto;
 }
 
+.mz a.vz {
+    cursor: url('https://banami.nekoweb.org/files/images/pyo.png'), auto;
+}
+
 body {
     display: flex;
     margin: 0;
