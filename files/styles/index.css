@@ -11,10 +11,7 @@
     --toolsTxtColor: white;
     --txtColor: #683946;
     --curse: url("https://banami.nekoweb.org/curse-1.png");
-}
-
-* {
-    font-family: ＭＳ Ｐゴシック, Times, Arial;
+    --cursestar: url("https://banami.nekoweb.org/files/images/smallstar.png");
 }
 
 html {
@@ -31,6 +28,10 @@ html {
 
 .mz a.vz {
     cursor: url('https://banami.nekoweb.org/files/images/pyo.png'), auto;
+}
+
+a, button, div {
+    cursor: var(--curse), auto;
 }
 
 body {
@@ -59,6 +60,15 @@ img, iframe {
     }
 }
 
+.header::after {
+    content: '';
+    background-image: var(--cursestar);
+    background-repeat: no-repeat;
+    background-position: left 100%;
+    padding-left: 15px;
+    margin-left: 5px;
+}
+
 marquee {
     align-items: flex-start;
     display: flex;
@@ -78,7 +88,7 @@ marquee {
     border-radius: 3.5px;
     height: 180px;
     outline: 5px solid var(--banner-outline-color);
-    width: 756px;
+    width: 749px;
 }
 
 .topstuff-container {
@@ -99,7 +109,9 @@ marquee {
     justify-content: space-evenly;
     margin: 1px auto;
     padding: 2px;
-    width: 47em;
+    max-width: 749px;
+    width: 749px;
+    min-width: 745px;
     align-content: center;
     flex-direction: row;
     align-items: center;
@@ -171,6 +183,7 @@ a, a:hover, a:visited, a:active {
     outline: 5px solid var(--mainOutline);
     border-radius: 3.5px;
     color: var(--txtColor);
+    font-family: 'MS Gothic', monospace;
 }
 
 .introd {
@@ -194,10 +207,17 @@ footer {
     color: var(--txtColor);
     background: var(--mainBgColor);
     outline: 5px solid var(--mainOutline);
-    width: 46.1em;
+    max-width: 749px;
+    font-family: 'MS Gothic', monospace;
     border-radius: 3.5px;
     text-align: right;
-    padding: 10px;
+    height: 150px;
+    padding: 5px;
+    overflow: hidden;
+}
+
+.mz {
+    margin-top: -1.5em;
 }
 
 .footer-hr {
