@@ -17,6 +17,7 @@
 * {
     font-family: 'MS Gothic', monospace;
 }
+
 html {
     background-image: var(--bgImg);
     background-repeat: no-repeat;
@@ -51,15 +52,21 @@ img, iframe {
     -ms-user-select: none;
 }
 
-@media screen and (max-width: 800px), (max-height: 950px) {
-    * {
-        scale: 95% !important
+@media screen and (max-width: 720px), (max-height: 850px) {
+    .topstuff-container {
+        scale: 90% !important
+    }
+}
+
+@media screen and (max-width: 600px), (max-height: 750px) {
+    .topstuff-container {
+        scale: 85% !important
     }
 }
 
 @media screen and (max-width: 540px), (max-height: 545px) {
-    * {
-        scale: 90% !important
+    .topstuff-container {
+        scale: 82% !important
     }
 }
 
