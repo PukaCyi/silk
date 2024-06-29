@@ -14,6 +14,9 @@
     --cursestar: url("https://banami.nekoweb.org/files/images/smallstar.png");
 }
 
+* {
+    font-family: 'MS Gothic', monospace;
+}
 html {
     background-image: var(--bgImg);
     background-repeat: no-repeat;
